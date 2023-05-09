@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='index.css'/>
+        <script>
+         const onLogoMouseOver = ()=>{
+                document.querySelector('.animated').classList.add('bounce');
+         }
+         const onLogoMouseOut = ()=>{
+                document.querySelector('.animated').classList.remove('bounce');
+         }
+        </script>
+    </head>
+
+    <body>
+        <div  onmouseout='onLogoMouseOut()' onmouseover='onLogoMouseOver()' class='outer-circle'>
+            <div class='squares-container animated '>
+                <div class='outlined-square '></div>
+                <div class='filled-square '></div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
